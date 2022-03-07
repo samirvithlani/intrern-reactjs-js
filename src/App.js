@@ -11,6 +11,8 @@ import { Electronics } from './pages/Electronics';
 import { Fashion } from './pages/Fashion';
 import { Groc } from './pages/Groc';
 import { SimpleForm } from './components/SimpleForm';
+import { EmployeeRegistration } from './components/EmployeeRegistration';
+import { ApiDemo } from './api/ApiDemo';
 
 function App() {
 
@@ -18,7 +20,9 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
+      {/* <EmployeeRegistration/> */}
+      <ApiDemo/>
+      {/* <Navbar/> */}
 
       <Routes>
         <Route path ="/home" element = {<Home/>}></Route>
