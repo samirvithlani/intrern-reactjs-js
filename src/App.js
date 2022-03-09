@@ -13,6 +13,8 @@ import { Groc } from './pages/Groc';
 import { SimpleForm } from './components/SimpleForm';
 import { EmployeeRegistration } from './components/EmployeeRegistration';
 import { ApiDemo } from './api/ApiDemo';
+import { ApiDemo2 } from './api/ApiDemo2';
+import { ApiDemo3 } from './api/ApiDemo3';
 
 function App() {
 
@@ -21,7 +23,9 @@ function App() {
   return (
     <div>
       {/* <EmployeeRegistration/> */}
-      <ApiDemo/>
+      {/* <ApiDemo/> */}
+      {/* <ApiDemo2/> */}
+      <ApiDemo3/>
       {/* <Navbar/> */}
 
       <Routes>
