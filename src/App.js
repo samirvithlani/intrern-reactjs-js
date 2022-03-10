@@ -15,6 +15,8 @@ import { EmployeeRegistration } from './components/EmployeeRegistration';
 import { ApiDemo } from './api/ApiDemo';
 import { ApiDemo2 } from './api/ApiDemo2';
 import { ApiDemo3 } from './api/ApiDemo3';
+import { FormDemo2 } from './components/FormDemo2';
+import { FileUpload } from './components/FileUpload';
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
       {/* <EmployeeRegistration/> */}
       {/* <ApiDemo/> */}
       {/* <ApiDemo2/> */}
-      <ApiDemo3/>
+      {/* <ApiDemo3/> */}
+      {/* <FormDemo2/> */}
+      <FileUpload/>
       {/* <Navbar/> */}
 
       <Routes>
