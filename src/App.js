@@ -17,6 +17,9 @@ import { ApiDemo2 } from './api/ApiDemo2';
 import { ApiDemo3 } from './api/ApiDemo3';
 import { FormDemo2 } from './components/FormDemo2';
 import { FileUpload } from './components/FileUpload';
+import { SelectDemo } from './components/SelectDemo';
+import { Login } from './components/Login';
+import { Profile } from './components/Profile';
 
 function App() {
 
@@ -29,8 +32,10 @@ function App() {
       {/* <ApiDemo2/> */}
       {/* <ApiDemo3/> */}
       {/* <FormDemo2/> */}
-      <FileUpload/>
-      {/* <Navbar/> */}
+      {/* <FileUpload/> */}
+      {/* <SelectDemo/> */}
+       <Navbar/> 
+      
 
       <Routes>
         <Route path ="/home" element = {<Home/>}></Route>
@@ -41,6 +46,8 @@ function App() {
         <Route path ="/fashion" element = {<Fashion/>}></Route>
         <Route path ="/g" element = {<Groc/>}></Route>
         <Route path ="/simpleform" element = {<SimpleForm/>}></Route>
+        <Route path = "/login" element = {<Login/>}></Route>
+        <Route path = "/profile" element = {<Profile/>}></Route>
       </Routes>
 
     </div>
