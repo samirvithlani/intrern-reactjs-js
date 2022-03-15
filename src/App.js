@@ -20,6 +20,7 @@ import { FileUpload } from './components/FileUpload';
 import { SelectDemo } from './components/SelectDemo';
 import { Login } from './components/Login';
 import { Profile } from './components/Profile';
+import { DeleteData } from './api/DeleteData';
 
 function App() {
 
@@ -48,6 +49,8 @@ function App() {
         <Route path ="/simpleform" element = {<SimpleForm/>}></Route>
         <Route path = "/login" element = {<Login/>}></Route>
         <Route path = "/profile" element = {<Profile/>}></Route>
+        <Route path = "/table" element = {<ApiDemo3/>}></Route>       
+        <Route path = "table/data/:id" element = {<DeleteData/>}></Route> 
       </Routes>
 
     </div>

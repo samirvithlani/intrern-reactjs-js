@@ -35,6 +35,10 @@ export const Navbar = () => {
         <Link class="nav-link" to="/profile">Profile</Link>
       </li>
       
+      <li class="nav-item">
+        <Link class="nav-link" to="/table">CRUD</Link>
+      </li>
+      
     </ul>
   </div>
 </nav>
