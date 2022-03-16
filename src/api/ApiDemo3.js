@@ -62,7 +62,7 @@ export const ApiDemo3 = () => {
                                     <td>
                                         <Link to = {`table/data/${user.id}`}>delete</Link>
                                         <button onClick = {()=>{deleteData(user.id)}}>delete</button>
-                                        <button className = "btn btn-primary">UPDATE</button>
+                                        <Link to = {`/table/update/${user.id}`} className = "btn btn-primary">UPDATE</Link>
                                     </td>
                                     
                                 </tr>

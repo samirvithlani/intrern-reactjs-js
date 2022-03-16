@@ -21,6 +21,7 @@ import { SelectDemo } from './components/SelectDemo';
 import { Login } from './components/Login';
 import { Profile } from './components/Profile';
 import { DeleteData } from './api/DeleteData';
+import { UpdateData } from './api/UpdateData';
 
 function App() {
 
@@ -50,7 +51,7 @@ function App() {
         <Route path = "/login" element = {<Login/>}></Route>
         <Route path = "/profile" element = {<Profile/>}></Route>
         <Route path = "/table" element = {<ApiDemo3/>}></Route>       
-        <Route path = "table/data/:id" element = {<DeleteData/>}></Route> 
+        <Route path = "table/update/:id" element = {<UpdateData/>}></Route>
       </Routes>
 
     </div>
