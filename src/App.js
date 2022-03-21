@@ -22,10 +22,19 @@ import { Login } from './components/Login';
 import { Profile } from './components/Profile';
 import { DeleteData } from './api/DeleteData';
 import { UpdateData } from './api/UpdateData';
+import { Props1 } from './components/Props1';
 
 function App() {
 
-  var title = "whatever"
+  var title = "whatever1"
+  var name = "jay1"
+
+
+  const demo = ()=>{
+
+    console.log("demo called.....")
+  }
+
 
   return (
     <div>
@@ -36,7 +45,9 @@ function App() {
       {/* <FormDemo2/> */}
       {/* <FileUpload/> */}
       {/* <SelectDemo/> */}
-       <Navbar/> 
+       
+       <Props1 title = {title} name ={name} demo = {demo}/>
+
       
 
       <Routes>
