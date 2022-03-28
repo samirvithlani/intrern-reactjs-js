@@ -18,6 +18,7 @@ export const ApiDemo2 = () => {
 
         name:name,
         job:job
+
     }
     const submit = (e)=>{
         e.preventDefault()

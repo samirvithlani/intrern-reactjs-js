@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Home } from './pages/Home';
-import {Navbar} from './pages/Navbar';
+import {Navbar} from './components1/Navbar'
 import { SubHome } from './components/SubHome';
 import {Routes,Route} from 'react-router-dom'
 import { AboutUs } from './pages/AboutUs';
@@ -18,11 +18,21 @@ import { ApiDemo3 } from './api/ApiDemo3';
 import { FormDemo2 } from './components/FormDemo2';
 import { FileUpload } from './components/FileUpload';
 import { SelectDemo } from './components/SelectDemo';
-import { Login } from './components/Login';
+import { Login } from './doubt/Login';
 import { Profile } from './components/Profile';
 import { DeleteData } from './api/DeleteData';
 import { UpdateData } from './api/UpdateData';
 import { Props1 } from './components/Props1';
+import { SimpleFormValidation } from './components/SimpleFormValidation';
+import { Header } from './components1/Header';
+import { Footer } from './components1/Footer';
+import { AddUser } from './components1/AddUser';
+import { ViewUsers } from './components1/ViewUsers';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Dashboard } from './doubt/Dashboard';
+
+
 
 function App() {
 
@@ -37,7 +47,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className = "App">
       {/* <EmployeeRegistration/> */}
       {/* <ApiDemo/> */}
       {/* <ApiDemo2/> */}
@@ -46,8 +56,11 @@ function App() {
       {/* <FileUpload/> */}
       {/* <SelectDemo/> */}
        
-       <Props1 title = {title} name ={name} demo = {demo}/>
-
+       {/* <Props1 title = {title} name ={name} demo = {demo}/> */}
+       {/* <SimpleFormValidation/> */}
+      {/* <Header/>
+      <Navbar/> */}
+      
       
 
       <Routes>
@@ -63,7 +76,12 @@ function App() {
         <Route path = "/profile" element = {<Profile/>}></Route>
         <Route path = "/table" element = {<ApiDemo3/>}></Route>       
         <Route path = "table/update/:id" element = {<UpdateData/>}></Route>
+        <Route path = "/adduser" element = {<AddUser/>}></Route>
+        <Route path = "/viewusers" element = {<ViewUsers/>}></Route>
+        <Route path = "/dashboard" element = {<Dashboard/>}></Route>
+        
       </Routes>
+      <Footer/>
 
     </div>
   );
