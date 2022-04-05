@@ -31,6 +31,9 @@ import { ViewUsers } from './components1/ViewUsers';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Dashboard } from './doubt/Dashboard';
+import { DepedentDropdown } from './doubt/DepedentDropdown';
+import { Rohithform } from './doubt/Rohithform';
+import { FileUploader } from './uploder/FileUploader';
 
 
 
@@ -48,6 +51,7 @@ function App() {
 
   return (
     <div className = "App">
+      
       {/* <EmployeeRegistration/> */}
       {/* <ApiDemo/> */}
       {/* <ApiDemo2/> */}
@@ -61,7 +65,7 @@ function App() {
       {/* <Header/>
       <Navbar/> */}
       
-      
+      <FileUploader/>
 
       <Routes>
         <Route path ="/home" element = {<Home/>}></Route>
